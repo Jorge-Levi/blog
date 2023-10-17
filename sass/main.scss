@@ -38,11 +38,36 @@ header {
       }
     }
   }
+  .hero {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      width: 15rem;
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    nav {
+      margin-right: 2rem;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        a{
+          color: black;
+        }
+      }
+    }
+  }
 }
 
-@media(min-width:1024px){
-  header{
-    .nav-social-links{
+@media (min-width: 1024px) {
+  header {
+    .nav-social-links {
       justify-content: end;
     }
   }
