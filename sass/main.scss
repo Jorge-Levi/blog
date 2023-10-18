@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 *,
 *:before,
@@ -62,7 +62,7 @@ header {
         list-style: none;
         margin: 0;
         padding: 0;
-        a{
+        a {
           color: black;
         }
       }
@@ -70,27 +70,27 @@ header {
   }
 }
 
-.hero{
+.hero {
   background-image: url("../assets/img/Cover.png");
-  background-position:center;
+  background-position: center;
   background-size: cover;
   height: 100vh;
-  div{
+  div {
     height: 100%;
     display: grid;
     align-content: center;
     justify-items: center;
-    h1{
+    h1 {
       color: white;
       text-align: center;
       font-size: 4rem;
       letter-spacing: 0.5rem;
     }
-    button{
+    button {
       width: 10rem;
       height: 5rem;
       background-color: #47cfac;
-      a{
+      a {
         color: black;
         text-decoration: none;
         font-size: 1.8rem;
@@ -100,10 +100,126 @@ header {
   }
 }
 
+.main-container {
+  background-color: #e6e9ed;
+  .news-container {
+    padding-bottom: 2rem;
+    padding-top: 0.01rem;
+    width: 80%;
+    margin: 0 auto;
+    .media {
+      display: grid;
+      grid-template-columns: 1fr;
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      a {
+        display: inline-block; /* Cambia el enlace a un bloque en línea */
+        text-align: center; /* Alinea el texto al centro */
+        padding: 1rem 2rem; /* Agrega más espacio en los lados para que parezca un botón más grande */
+        background-color: #47cfac; /* Establece un color de fondo */
+        color: #ffffff; /* Cambia el color del texto a blanco para que sea más visible en el fondo */
+        text-decoration: none;
+        border: none; /* Elimina el borde */
+        border-radius: 0.5rem; /* Agrega esquinas redondeadas */
+        transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+      }
+
+      a:hover {
+        background-color: #35a892; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+      }
+    }
+  }
+}
+
+.last-blogs-conteiner {
+  margin: 0 auto;
+  width: 80%;
+  .articles-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    article {
+      margin-bottom: 4rem;
+      img {
+        width: 100%;
+      }
+      a {
+        display: inline-block; /* Cambia el enlace a un bloque en línea */
+        text-align: center; /* Alinea el texto al centro */
+        padding: 1rem 2rem; /* Agrega más espacio en los lados para que parezca un botón más grande */
+        background-color: #47cfac; /* Establece un color de fondo */
+        color: #ffffff; /* Cambia el color del texto a blanco para que sea más visible en el fondo */
+        text-decoration: none;
+        border: none; /* Elimina el borde */
+        border-radius: 0.5rem; /* Agrega esquinas redondeadas */
+        transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+        width: 100%;
+      }
+
+      a:hover {
+        background-color: #35a892; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+      }
+    }
+  }
+}
+
+footer{
+  border-top: 4rem solid #47cfac;
+  background-color: #22272d;
+  padding: 4rem;
+  p{
+    margin: 0;
+    color: white;
+    text-align: center;
+  }
+}
+
 @media (min-width: 1024px) {
   header {
     .nav-social-links {
       justify-content: end;
+    }
+  }
+  .main-container {
+    .news-container {
+      .media {
+        grid-template-columns: 2fr 1fr;
+        gap: 5rem;
+        .info {
+          a {
+            align-self: start;
+          }
+        }
+      }
+    }
+  }
+
+  .last-blogs-conteiner {
+    .articles-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      article{
+        a{
+          // background-color: #e6e9ed;
+          // display: inline;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .last-blogs-conteiner {
+    .articles-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
   }
 }
