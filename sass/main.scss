@@ -169,11 +169,56 @@ header {
   }
 }
 
-footer{
+.main-container-blog {
+  width: 80%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+  p {
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+  }
+}
+
+.contact-container {
+  background-color: #e6e9ed;
+  .grid-contact {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    div {
+      div {
+        img {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+      .info-contact {
+        a {
+          display: inline-block; /* Cambia el enlace a un bloque en línea */
+          text-align: center; /* Alinea el texto al centro */
+          padding: 1rem 2rem; /* Agrega más espacio en los lados para que parezca un botón más grande */
+          color: black; /* Cambia el color del texto a blanco para que sea más visible en el fondo */
+          text-decoration: none;
+          border-bottom: 0.1rem solid black; /* Elimina el borde */
+          width: 100%;
+        }
+        p {
+          letter-spacing: 0.1rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+footer {
   border-top: 4rem solid #47cfac;
   background-color: #22272d;
   padding: 4rem;
-  p{
+  p {
     margin: 0;
     color: white;
     text-align: center;
@@ -204,11 +249,32 @@ footer{
     .articles-container {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
-      article{
-        a{
+      article {
+        a {
           // background-color: #e6e9ed;
           // display: inline;
           width: auto;
+        }
+      }
+    }
+  }
+
+  .contact-container {
+    .grid-contact {
+      padding-top: 5rem;
+      grid-template-columns: 1fr 1fr;
+      gap:20rem;
+      padding-bottom: 3rem;
+      .flex-container{
+        display: flex;
+        gap: 1.5rem;
+        .info-contact{
+          a{
+            // background-color: #35a892;
+            width: auto;
+            padding: 0;
+            padding-bottom: 1rem;
+          }
         }
       }
     }
@@ -220,6 +286,13 @@ footer{
     .articles-container {
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
+    }
+  }
+  .contact-container {
+    .grid-contact {
+      padding-top: 5rem;
+      grid-template-columns: 1fr 1fr;
+      gap:20rem;
     }
   }
 }
