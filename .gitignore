@@ -1,69 +1,69 @@
-# Archivos y directorios generados por el sistema operativo
-.DS_Store
-Thumbs.db
+# # Archivos y directorios generados por el sistema operativo
+# .DS_Store
+# Thumbs.db
 
-# Directorio node_modules de Node.js
-node_modules/
+# # Directorio node_modules de Node.js
+# node_modules/
 
-# Archivo de bloqueo de dependencias generadas por Yarn
-yarn.lock
+# # Archivo de bloqueo de dependencias generadas por Yarn
+# yarn.lock
 
-# Directorio de dependencias generadas por npm
-npm-debug.log
+# # Directorio de dependencias generadas por npm
+# npm-debug.log
 
-# Directorio de dependencias generadas por Bower
-bower_components/
+# # Directorio de dependencias generadas por Bower
+# bower_components/
 
-# Directorio de dependencias generadas por Composer
-vendor/
+# # Directorio de dependencias generadas por Composer
+# vendor/
 
-# Archivo de registro de errores de PHP
-error_log
+# # Archivo de registro de errores de PHP
+# error_log
 
-# Archivo de configuración de entorno local
-.env
+# # Archivo de configuración de entorno local
+# .env
 
-# Archivo de configuración de entorno local (PHP)
-.env.php
+# # Archivo de configuración de entorno local (PHP)
+# .env.php
 
-# Archivo de configuración de entorno local (Python)
-.env.py
+# # Archivo de configuración de entorno local (Python)
+# .env.py
 
-# Directorio de archivos de respaldo
-*.bak
-*.backup
+# # Directorio de archivos de respaldo
+# *.bak
+# *.backup
 
-# Archivos de compilación y salida
-/dist/
-/build/
-/out/
+# # Archivos de compilación y salida
+# /dist/
+# /build/
+# /out/
 
-# Archivos de registro
-*.log
+# # Archivos de registro
+# *.log
 
-# Directorio de caché
-.cache/
+# # Directorio de caché
+# .cache/
 
-# Archivos temporales
-*.tmp
+# # Archivos temporales
+# *.tmp
 
-# Directorio de archivos de prueba
-/test/
+# # Directorio de archivos de prueba
+# /test/
 
-# Cualquier archivo que termine con una extensión de imagen
-*.[jpg, jpeg, gif, png]
+# # Cualquier archivo que termine con una extensión de imagen
+# *.[jpg, jpeg, gif, png]
 
-# Cualquier archivo que termine con una extensión de video
-*.[mp4, avi, mkv]
+# # Cualquier archivo que termine con una extensión de video
+# *.[mp4, avi, mkv]
 
-# Cualquier archivo que termine con una extensión de audio
-*.[mp3, wav, ogg]
+# # Cualquier archivo que termine con una extensión de audio
+# *.[mp3, wav, ogg]
 
-# Cualquier archivo que termine con una extensión de documentos
-*.[pdf, doc, docx, xls, xlsx, ppt, pptx]
+# # Cualquier archivo que termine con una extensión de documentos
+# *.[pdf, doc, docx, xls, xlsx, ppt, pptx]
 
-# Directorio de Sass compilado
-/css/
+# # Directorio de Sass compilado
+# /css/
 
-# Directorio de Normalize.css
-/normalize.css/
+# # Directorio de Normalize.css
+# /normalize.css/
